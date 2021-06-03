@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.mycore.mir.it.tests.MIRWebCLIITCase" time="18.924" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="git.commit.id.describe" value="v2020.06.1-2275-g3f1c249"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.version" value="11.0.2+9"/>
+    <property name="git.build.number" value="3491"/>
+    <property name="user.name" value="travis"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.boot.library.path" value="/usr/local/lib/jvm/openjdk11/lib"/>
+    <property name="classworlds.conf" value="/usr/local/maven-3.6.3/bin/m2.conf"/>
+    <property name="git.build.user.name" value="Travis CI User"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="user.timezone" value="UTC"/>
+    <property name="git.local.branch.behind" value="NO_REMOTE"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="git.remote.origin.url" value="https://github.com/MyCoRe-Org/mir.git"/>
+    <property name="git.build.version" value="2021.05-SNAPSHOT"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="maven.conf" value="/usr/local/maven-3.6.3/conf"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="git.commit.message.short" value="Merge 644bd99a8ec011ca20aca9411f84db8671528c13 into ed5929908a03f18bb02dc0421db335dcd3011fda"/>
+    <property name="git.commit.message.full" value="Merge 644bd99a8ec011ca20aca9411f84db8671528c13 into ed5929908a03f18bb02dc0421db335dcd3011fda"/>
+    <property name="user.country" value="US"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.home" value="/usr/local/lib/jvm/openjdk11"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="git.closest.tag.name" value="v2020.06.1"/>
+    <property name="os.version" value="5.4.0-1032-gcp"/>
+    <property name="git.tags" value=""/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="11.0.2+9"/>
+    <property name="git.local.branch.ahead" value="NO_REMOTE"/>
+    <property name="git.closest.tag.commit.count" value="2275"/>
+    <property name="git.build.number.unique" value="773397786"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="git.commit.id.full" value="3f1c2498ae4a2b5d33b9d009b170a27d01359b9d"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="jetty" value="true"/>
+    <property name="user.home" value="/home/travis"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="git.dirty" value="false"/>
+    <property name="git.total.commit.count" value="2339"/>
+    <property name="library.jansi.path" value="/usr/local/maven-3.6.3/lib/jansi-native"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/maven-3.6.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -P!standard-with-extra-repos -Djetty clean install"/>
+    <property name="java.class.path" value="/usr/local/maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/travis/build/MyCoRe-Org/mir"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="git.commit.id.describe-short" value="v2020.06.1-2275"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="user.dir" value="/home/travis/build/MyCoRe-Org/mir"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="git.commit.user.name" value="Kathleen Neumann"/>
+    <property name="git.commit.time" value="2021-06-03T15:11:53Z"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="git.branch" value="main"/>
+    <property name="git.build.time" value="2021-06-03T15:15:58Z"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="git.commit.id.abbrev" value="3f1c249"/>
+    <property name="java.vendor.version" value="18.9"/>
+  </properties>
+  <testcase name="testWebCLIStartup" classname="org.mycore.mir.it.tests.MIRWebCLIITCase" time="16.002"/>
+</testsuite>
