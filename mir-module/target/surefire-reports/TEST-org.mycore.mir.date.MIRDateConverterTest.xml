@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.mycore.mir.date.MIRDateConverterTest" time="3.083" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="git.tags" value=""/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="git.build.version" value="2021.05-SNAPSHOT"/>
+    <property name="java.class.path" value="/home/travis/build/MyCoRe-Org/mir/mir-module/target/test-classes:/home/travis/build/MyCoRe-Org/mir/mir-module/target/classes:/home/travis/.m2/repository/com/google/code/gson/gson/2.8.7/gson-2.8.7.jar:/home/travis/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/home/travis/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/travis/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/travis/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/travis/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/home/travis/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/home/travis/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/travis/.m2/repository/com/zaxxer/HikariCP/3.4.1/HikariCP-3.4.1.jar:/home/travis/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/travis/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/travis/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/home/travis/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.4/jakarta.servlet-api-4.0.4.jar:/home/travis/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/home/travis/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/travis/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/travis/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/travis/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/travis/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/travis/.m2/repository/net/sf/saxon/Saxon-HE/10.5/Saxon-HE-10.5.jar:/home/travis/.m2/repository/org/apache/abdera/abdera-core/1.1.3/abdera-core-1.1.3.jar:/home/travis/.m2/repository/org/apache/geronimo/specs/geronimo-stax-api_1.0_spec/1.0.1/geronimo-stax-api_1.0_spec-1.0.1.jar:/home/travis/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/home/travis/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/home/travis/.m2/repository/org/apache/abdera/abdera-i18n/1.1.3/abdera-i18n-1.1.3.jar:/home/travis/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/home/travis/.m2/repository/org/apache/solr/solr-solrj/8.8.2/solr-solrj-8.8.2.jar:/home/travis/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/travis/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/travis/.m2/repository/org/apache/zookeeper/zookeeper/3.6.2/zookeeper-3.6.2.jar:/home/travis/.m2/repository/org/apache/zookeeper/zookeeper-jute/3.6.2/zookeeper-jute-3.6.2.jar:/home/travis/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.6/snappy-java-1.1.7.6.jar:/home/travis/.m2/repository/org/hibernate/hibernate-hikaricp/5.4.4.Final/hibernate-hikaricp-5.4.4.Final.jar:/home/travis/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/travis/.m2/repository/org/hibernate/hibernate-core/5.4.28.Final/hibernate-core-5.4.28.Final.jar:/home/travis/.m2/repository/net/bytebuddy/byte-buddy/1.10.17/byte-buddy-1.10.17.jar:/home/travis/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/travis/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/travis/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/travis/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/travis/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/home/travis/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/travis/.m2/repository/org/hsqldb/hsqldb/2.6.0/hsqldb-2.6.0.jar:/home/travis/.m2/repository/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar:/home/travis/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar:/home/travis/.m2/repository/org/mycore/mycore-base/2021.05-SNAPSHOT/mycore-base-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/com/auth0/java-jwt/3.16.0/java-jwt-3.16.0.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.12.3/jackson-module-jaxb-annotations-2.12.3.jar:/home/travis/.m2/repository/com/google/zxing/core/3.4.1/core-3.4.1.jar:/home/travis/.m2/repository/com/ibm/icu/icu4j/69.1/icu4j-69.1.jar:/home/travis/.m2/repository/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar:/home/travis/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/travis/.m2/repository/com/sun/mail/mailapi/1.6.5/mailapi-1.6.5.jar:/home/travis/.m2/repository/com/sun/mail/smtp/1.6.5/smtp-1.6.5.jar:/home/travis/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/travis/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/travis/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.9/swagger-annotations-2.1.9.jar:/home/travis/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/travis/.m2/repository/jakarta/inject/jakarta.inject-api/1.0.1/jakarta.inject-api-1.0.1.jar:/home/travis/.m2/repository/jakarta/websocket/jakarta.websocket-api/1.1.2/jakarta.websocket-api-1.1.2.jar:/home/travis/.m2/repository/jaxen/jaxen/1.2.0/jaxen-1.2.0.jar:/home/travis/.m2/repository/net/java/dev/jna/jna/5.6.0/jna-5.6.0.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpclient-cache/4.5.13/httpclient-cache-4.5.13.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-web/2.14.1/log4j-web-2.14.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar:/home/travis/.m2/repository/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar:/home/travis/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar:/home/travis/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.34/jersey-container-servlet-core-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-common/2.34/jersey-common-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-client/2.34/jersey-client-2.34.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-server/2.34/jersey-server-2.34.jar:/home/travis/.m2/repository/org/glassfish/jersey/media/jersey-media-multipart/2.34/jersey-media-multipart-2.34.jar:/home/travis/.m2/repository/org/jvnet/mimepull/mimepull/1.9.13/mimepull-1.9.13.jar:/home/travis/.m2/repository/org/javassist/javassist/3.28.0-GA/javassist-3.28.0-GA.jar:/home/travis/.m2/repository/org/tmatesoft/svnkit/svnkit/1.10.3/svnkit-1.10.3.jar:/home/travis/.m2/repository/de/regnis/q/sequence/sequence-library/1.0.4/sequence-library-1.0.4.jar:/home/travis/.m2/repository/org/tmatesoft/sqljet/sqljet/1.1.14/sqljet-1.1.14.jar:/home/travis/.m2/repository/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.jar:/home/travis/.m2/repository/net/java/dev/jna/jna-platform/5.6.0/jna-platform-5.6.0.jar:/home/travis/.m2/repository/org/lz4/lz4-java/1.4.1/lz4-java-1.4.1.jar:/home/travis/.m2/repository/se/jiderhamn/classloader-leak-prevention/classloader-leak-prevention-core/2.7.0/classloader-leak-prevention-core-2.7.0.jar:/home/travis/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/home/travis/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.14.1/log4j-slf4j-impl-2.14.1.jar:/home/travis/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.34/jersey-hk2-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/home/travis/.m2/repository/org/mycore/mycore-base/2021.05-SNAPSHOT/mycore-base-2021.05-SNAPSHOT-tests.jar:/home/travis/.m2/repository/org/mycore/mycore-mods/2021.05-SNAPSHOT/mycore-mods-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/com/rometools/rome/1.15.0/rome-1.15.0.jar:/home/travis/.m2/repository/com/rometools/rome-utils/1.15.0/rome-utils-1.15.0.jar:/home/travis/.m2/repository/org/bibsonomy/bibsonomy-bibtex-parser/3.9.2/bibsonomy-bibtex-parser-3.9.2.jar:/home/travis/.m2/repository/org/bibsonomy/bibsonomy-common/3.9.2/bibsonomy-common-3.9.2.jar:/home/travis/.m2/repository/org/bibsonomy/bibsonomy-model/3.9.2/bibsonomy-model-3.9.2.jar:/home/travis/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/home/travis/.m2/repository/org/mycore/mycore-pi/2021.05-SNAPSHOT/mycore-pi-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/travis/.m2/repository/org/mycore/mycore-solr/2021.05-SNAPSHOT/mycore-solr-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/mycore/mycore-classbrowser/2021.05-SNAPSHOT/mycore-classbrowser-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/mycore/mycore-sword/2021.05-SNAPSHOT/mycore-sword-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.2.6/woodstox-core-6.2.6.jar:/home/travis/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar:/home/travis/.m2/repository/org/apache/abdera/abdera-parser/1.1.3/abdera-parser-1.1.3.jar:/home/travis/.m2/repository/org/apache/ws/commons/axiom/axiom-api/1.2.14/axiom-api-1.2.14.jar:/home/travis/.m2/repository/org/apache/james/apache-mime4j-core/0.7.2/apache-mime4j-core-0.7.2.jar:/home/travis/.m2/repository/org/apache/ws/commons/axiom/axiom-impl/1.2.14/axiom-impl-1.2.14.jar:/home/travis/.m2/repository/org/mycore/mets/mets-validator/1.3/mets-validator-1.3.jar:/home/travis/.m2/repository/org/mycore/mycore-user2/2021.05-SNAPSHOT/mycore-user2-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/jasig/cas/cas-client-core/3.1.10/cas-client-core-3.1.10.jar:/home/travis/.m2/repository/org/mycore/mycore-wfc/2021.05-SNAPSHOT/mycore-wfc-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/mycore/mycore-xeditor/2021.05-SNAPSHOT/mycore-xeditor-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/mycore/sword/easy-sword2-lib/1.0.5/easy-sword2-lib-1.0.5.jar:/home/travis/.m2/repository/commons-fileupload/commons-fileupload/1.4/commons-fileupload-1.4.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.14.1/log4j-1.2-api-2.14.1.jar:/home/travis/.m2/repository/org/mycore/mycore-csl/2021.05-SNAPSHOT/mycore-csl-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/de/undercouch/citeproc-java/2.0.0/citeproc-java-2.0.0.jar:/home/travis/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/travis/.m2/repository/org/apache/commons/commons-text/1.8/commons-text-1.8.jar:/home/travis/.m2/repository/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar:/home/travis/.m2/repository/org/graalvm/sdk/graal-sdk/19.2.1/graal-sdk-19.2.1.jar:/home/travis/.m2/repository/org/graalvm/js/js/19.2.1/js-19.2.1.jar:/home/travis/.m2/repository/org/graalvm/regex/regex/19.2.1/regex-19.2.1.jar:/home/travis/.m2/repository/org/graalvm/truffle/truffle-api/19.2.1/truffle-api-19.2.1.jar:/home/travis/.m2/repository/org/ow2/asm/asm/6.2.1/asm-6.2.1.jar:/home/travis/.m2/repository/org/ow2/asm/asm-tree/6.2.1/asm-tree-6.2.1.jar:/home/travis/.m2/repository/org/ow2/asm/asm-analysis/6.2.1/asm-analysis-6.2.1.jar:/home/travis/.m2/repository/org/ow2/asm/asm-commons/6.2.1/asm-commons-6.2.1.jar:/home/travis/.m2/repository/org/ow2/asm/asm-util/6.2.1/asm-util-6.2.1.jar:/home/travis/.m2/repository/org/jbibtex/jbibtex/1.0.18/jbibtex-1.0.18.jar:/home/travis/.m2/repository/org/citationstyles/locales/21.3/locales-21.3.jar:/home/travis/.m2/repository/org/citationstyles/styles/21.3/styles-21.3.jar:/home/travis/.m2/repository/org/mycore/mycore-ifs/2021.05-SNAPSHOT/mycore-ifs-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/mycore/pica2mods/pica2mods-xslt/2.0-SNAPSHOT/pica2mods-xslt-2.0-SNAPSHOT.jar:"/>
+    <property name="git.branch" value="main"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="git.build.number" value="3501"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="UTC"/>
+    <property name="git.build.number.unique" value="774175413"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="git.build.user.name" value="Travis CI User"/>
+    <property name="sun.boot.library.path" value="/usr/local/lib/jvm/openjdk11/lib"/>
+    <property name="sun.java.command" value="/home/travis/build/MyCoRe-Org/mir/mir-module/target/surefire/surefirebooter17245396040944511320.jar /home/travis/build/MyCoRe-Org/mir/mir-module/target/surefire 2021-06-10T18-24-03_710-jvmRun1 surefire14441102354292298801tmp surefire_013359991001306810788tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/travis/build/MyCoRe-Org/mir/mir-module/target/test-classes:/home/travis/build/MyCoRe-Org/mir/mir-module/target/classes:/home/travis/.m2/repository/com/google/code/gson/gson/2.8.7/gson-2.8.7.jar:/home/travis/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/home/travis/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/travis/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/travis/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/travis/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/home/travis/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/home/travis/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/travis/.m2/repository/com/zaxxer/HikariCP/3.4.1/HikariCP-3.4.1.jar:/home/travis/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/travis/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/travis/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/home/travis/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.4/jakarta.servlet-api-4.0.4.jar:/home/travis/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/home/travis/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/travis/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/travis/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/travis/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/travis/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/travis/.m2/repository/net/sf/saxon/Saxon-HE/10.5/Saxon-HE-10.5.jar:/home/travis/.m2/repository/org/apache/abdera/abdera-core/1.1.3/abdera-core-1.1.3.jar:/home/travis/.m2/repository/org/apache/geronimo/specs/geronimo-stax-api_1.0_spec/1.0.1/geronimo-stax-api_1.0_spec-1.0.1.jar:/home/travis/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/home/travis/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/home/travis/.m2/repository/org/apache/abdera/abdera-i18n/1.1.3/abdera-i18n-1.1.3.jar:/home/travis/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/home/travis/.m2/repository/org/apache/solr/solr-solrj/8.8.2/solr-solrj-8.8.2.jar:/home/travis/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/travis/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/travis/.m2/repository/org/apache/zookeeper/zookeeper/3.6.2/zookeeper-3.6.2.jar:/home/travis/.m2/repository/org/apache/zookeeper/zookeeper-jute/3.6.2/zookeeper-jute-3.6.2.jar:/home/travis/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.6/snappy-java-1.1.7.6.jar:/home/travis/.m2/repository/org/hibernate/hibernate-hikaricp/5.4.4.Final/hibernate-hikaricp-5.4.4.Final.jar:/home/travis/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/travis/.m2/repository/org/hibernate/hibernate-core/5.4.28.Final/hibernate-core-5.4.28.Final.jar:/home/travis/.m2/repository/net/bytebuddy/byte-buddy/1.10.17/byte-buddy-1.10.17.jar:/home/travis/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/travis/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/travis/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/travis/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/travis/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/home/travis/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/travis/.m2/repository/org/hsqldb/hsqldb/2.6.0/hsqldb-2.6.0.jar:/home/travis/.m2/repository/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar:/home/travis/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar:/home/travis/.m2/repository/org/mycore/mycore-base/2021.05-SNAPSHOT/mycore-base-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/com/auth0/java-jwt/3.16.0/java-jwt-3.16.0.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.12.3/jackson-module-jaxb-annotations-2.12.3.jar:/home/travis/.m2/repository/com/google/zxing/core/3.4.1/core-3.4.1.jar:/home/travis/.m2/repository/com/ibm/icu/icu4j/69.1/icu4j-69.1.jar:/home/travis/.m2/repository/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar:/home/travis/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/travis/.m2/repository/com/sun/mail/mailapi/1.6.5/mailapi-1.6.5.jar:/home/travis/.m2/repository/com/sun/mail/smtp/1.6.5/smtp-1.6.5.jar:/home/travis/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/travis/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/travis/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.9/swagger-annotations-2.1.9.jar:/home/travis/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/travis/.m2/repository/jakarta/inject/jakarta.inject-api/1.0.1/jakarta.inject-api-1.0.1.jar:/home/travis/.m2/repository/jakarta/websocket/jakarta.websocket-api/1.1.2/jakarta.websocket-api-1.1.2.jar:/home/travis/.m2/repository/jaxen/jaxen/1.2.0/jaxen-1.2.0.jar:/home/travis/.m2/repository/net/java/dev/jna/jna/5.6.0/jna-5.6.0.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpclient-cache/4.5.13/httpclient-cache-4.5.13.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-web/2.14.1/log4j-web-2.14.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar:/home/travis/.m2/repository/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar:/home/travis/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar:/home/travis/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.34/jersey-container-servlet-core-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-common/2.34/jersey-common-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-client/2.34/jersey-client-2.34.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-server/2.34/jersey-server-2.34.jar:/home/travis/.m2/repository/org/glassfish/jersey/media/jersey-media-multipart/2.34/jersey-media-multipart-2.34.jar:/home/travis/.m2/repository/org/jvnet/mimepull/mimepull/1.9.13/mimepull-1.9.13.jar:/home/travis/.m2/repository/org/javassist/javassist/3.28.0-GA/javassist-3.28.0-GA.jar:/home/travis/.m2/repository/org/tmatesoft/svnkit/svnkit/1.10.3/svnkit-1.10.3.jar:/home/travis/.m2/repository/de/regnis/q/sequence/sequence-library/1.0.4/sequence-library-1.0.4.jar:/home/travis/.m2/repository/org/tmatesoft/sqljet/sqljet/1.1.14/sqljet-1.1.14.jar:/home/travis/.m2/repository/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.jar:/home/travis/.m2/repository/net/java/dev/jna/jna-platform/5.6.0/jna-platform-5.6.0.jar:/home/travis/.m2/repository/org/lz4/lz4-java/1.4.1/lz4-java-1.4.1.jar:/home/travis/.m2/repository/se/jiderhamn/classloader-leak-prevention/classloader-leak-prevention-core/2.7.0/classloader-leak-prevention-core-2.7.0.jar:/home/travis/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/home/travis/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.14.1/log4j-slf4j-impl-2.14.1.jar:/home/travis/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.34/jersey-hk2-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/home/travis/.m2/repository/org/mycore/mycore-base/2021.05-SNAPSHOT/mycore-base-2021.05-SNAPSHOT-tests.jar:/home/travis/.m2/repository/org/mycore/mycore-mods/2021.05-SNAPSHOT/mycore-mods-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/com/rometools/rome/1.15.0/rome-1.15.0.jar:/home/travis/.m2/repository/com/rometools/rome-utils/1.15.0/rome-utils-1.15.0.jar:/home/travis/.m2/repository/org/bibsonomy/bibsonomy-bibtex-parser/3.9.2/bibsonomy-bibtex-parser-3.9.2.jar:/home/travis/.m2/repository/org/bibsonomy/bibsonomy-common/3.9.2/bibsonomy-common-3.9.2.jar:/home/travis/.m2/repository/org/bibsonomy/bibsonomy-model/3.9.2/bibsonomy-model-3.9.2.jar:/home/travis/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar:/home/travis/.m2/repository/org/mycore/mycore-pi/2021.05-SNAPSHOT/mycore-pi-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/travis/.m2/repository/org/mycore/mycore-solr/2021.05-SNAPSHOT/mycore-solr-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/mycore/mycore-classbrowser/2021.05-SNAPSHOT/mycore-classbrowser-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/mycore/mycore-sword/2021.05-SNAPSHOT/mycore-sword-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.2.6/woodstox-core-6.2.6.jar:/home/travis/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar:/home/travis/.m2/repository/org/apache/abdera/abdera-parser/1.1.3/abdera-parser-1.1.3.jar:/home/travis/.m2/repository/org/apache/ws/commons/axiom/axiom-api/1.2.14/axiom-api-1.2.14.jar:/home/travis/.m2/repository/org/apache/james/apache-mime4j-core/0.7.2/apache-mime4j-core-0.7.2.jar:/home/travis/.m2/repository/org/apache/ws/commons/axiom/axiom-impl/1.2.14/axiom-impl-1.2.14.jar:/home/travis/.m2/repository/org/mycore/mets/mets-validator/1.3/mets-validator-1.3.jar:/home/travis/.m2/repository/org/mycore/mycore-user2/2021.05-SNAPSHOT/mycore-user2-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/jasig/cas/cas-client-core/3.1.10/cas-client-core-3.1.10.jar:/home/travis/.m2/repository/org/mycore/mycore-wfc/2021.05-SNAPSHOT/mycore-wfc-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/mycore/mycore-xeditor/2021.05-SNAPSHOT/mycore-xeditor-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/mycore/sword/easy-sword2-lib/1.0.5/easy-sword2-lib-1.0.5.jar:/home/travis/.m2/repository/commons-fileupload/commons-fileupload/1.4/commons-fileupload-1.4.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.14.1/log4j-1.2-api-2.14.1.jar:/home/travis/.m2/repository/org/mycore/mycore-csl/2021.05-SNAPSHOT/mycore-csl-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/de/undercouch/citeproc-java/2.0.0/citeproc-java-2.0.0.jar:/home/travis/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/travis/.m2/repository/org/apache/commons/commons-text/1.8/commons-text-1.8.jar:/home/travis/.m2/repository/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar:/home/travis/.m2/repository/org/graalvm/sdk/graal-sdk/19.2.1/graal-sdk-19.2.1.jar:/home/travis/.m2/repository/org/graalvm/js/js/19.2.1/js-19.2.1.jar:/home/travis/.m2/repository/org/graalvm/regex/regex/19.2.1/regex-19.2.1.jar:/home/travis/.m2/repository/org/graalvm/truffle/truffle-api/19.2.1/truffle-api-19.2.1.jar:/home/travis/.m2/repository/org/ow2/asm/asm/6.2.1/asm-6.2.1.jar:/home/travis/.m2/repository/org/ow2/asm/asm-tree/6.2.1/asm-tree-6.2.1.jar:/home/travis/.m2/repository/org/ow2/asm/asm-analysis/6.2.1/asm-analysis-6.2.1.jar:/home/travis/.m2/repository/org/ow2/asm/asm-commons/6.2.1/asm-commons-6.2.1.jar:/home/travis/.m2/repository/org/ow2/asm/asm-util/6.2.1/asm-util-6.2.1.jar:/home/travis/.m2/repository/org/jbibtex/jbibtex/1.0.18/jbibtex-1.0.18.jar:/home/travis/.m2/repository/org/citationstyles/locales/21.3/locales-21.3.jar:/home/travis/.m2/repository/org/citationstyles/styles/21.3/styles-21.3.jar:/home/travis/.m2/repository/org/mycore/mycore-ifs/2021.05-SNAPSHOT/mycore-ifs-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/mycore/pica2mods/pica2mods-xslt/2.0-SNAPSHOT/pica2mods-xslt-2.0-SNAPSHOT.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="MCR.Home" value="/tmp/junit11057615408979682655/mcrhome"/>
+    <property name="user.home" value="/home/travis"/>
+    <property name="user.language" value="en"/>
+    <property name="git.closest.tag.commit.count" value="2276"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.home" value="/usr/local/lib/jvm/openjdk11"/>
+    <property name="git.total.commit.count" value="2337"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/travis/build/MyCoRe-Org/mir/mir-module"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="git.commit.id.full" value="b5dc6138114ef0befe66ee9e08d5219171474722"/>
+    <property name="git.closest.tag.name" value="v2020.06.1"/>
+    <property name="git.local.branch.ahead" value="NO_REMOTE"/>
+    <property name="git.build.time" value="2021-06-10T18:23:21Z"/>
+    <property name="surefire.real.class.path" value="/home/travis/build/MyCoRe-Org/mir/mir-module/target/surefire/surefirebooter17245396040944511320.jar"/>
+    <property name="git.commit.message.full" value="Merge 317054bd0d8e99e43509851db66ca79d1b403fcf into ed5929908a03f18bb02dc0421db335dcd3011fda"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.2+9"/>
+    <property name="user.name" value="travis"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-1032-gcp"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="jetty" value="true"/>
+    <property name="git.local.branch.behind" value="NO_REMOTE"/>
+    <property name="git.dirty" value="false"/>
+    <property name="localRepository" value="/home/travis/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="com.zaxxer.hikari.pool_number" value="9"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="user.dir" value="/home/travis/build/MyCoRe-Org/mir/mir-module"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="git.commit.user.name" value="Kathleen Neumann"/>
+    <property name="git.commit.id.abbrev" value="b5dc613"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="git.commit.id.describe-short" value="v2020.06.1-2276"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="git.commit.id.describe" value="v2020.06.1-2276-gb5dc613"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="git.commit.message.short" value="Merge 317054bd0d8e99e43509851db66ca79d1b403fcf into ed5929908a03f18bb02dc0421db335dcd3011fda"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.2+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="MCRRuntimeComponentDetector.underTesting" value="mir-module"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="git.commit.time" value="2021-06-10T18:19:09Z"/>
+    <property name="MCR.AppName" value="mir-module"/>
+    <property name="git.remote.origin.url" value="https://github.com/MyCoRe-Org/mir.git"/>
+  </properties>
+  <testcase name="testISO8601toW3CDTF" classname="org.mycore.mir.date.MIRDateConverterTest" time="1.197">
+    <system-out><![CDATA[Creating config directory: /tmp/junit11057615408979682655/mcrhome/mir-module
+MyCoRe components detected: mcr:mycore-base, mcr:mycore-solr, mcr:mycore-user2, mcr:mycore-xeditor, mcr:mycore-classbrowser, mcr:mycore-mods, mcr:mycore-csl, mcr:mycore-ifs, mcr:mycore-pi, mcr:mycore-sword, mcr:mycore-wfc
+Applications modules detected: app:mir-module
+&amp#27;[34m2021-06-10T18:24:18,564 [main] INFO   MCRConfigurationInputStream: Current configuration directory: /tmp/junit11057615408979682655/mcrhome/mir-module&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:18,677 [main] INFO   LogHelper: HHH000204: Processing PersistenceUnitInfo [name: mir-module]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:18,739 [main] INFO   HikariDataSource: HikariPool-10 - Starting...&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:18,741 [main] WARN   DriverDataSource: Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:18,742 [main] INFO   PoolBase: HikariPool-10 - Driver does not support get/set network timeout for connections. (feature not supported)&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:18,747 [main] INFO   HikariDataSource: HikariPool-10 - Start completed.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:18,748 [main] INFO   Dialect: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:18,802 [main] WARN   JavaTypeDescriptorRegistry: HHH000481: Encountered Java type [class java.lang.Object] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:19,155 [main] WARN   MetadataContext: HHH015011: Unable to locate static metamodel field : org.mycore.datamodel.classifications2.MCRCategoryID_#id; this may or may not indicate a problem with the static metamodel&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,169 [main] INFO   JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,379 [main] INFO   LogHelper: HHH000204: Processing PersistenceUnitInfo [name: mir-module]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,414 [main] INFO   HikariDataSource: HikariPool-11 - Starting...&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:19,416 [main] WARN   DriverDataSource: Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,419 [main] INFO   PoolBase: HikariPool-11 - Driver does not support get/set network timeout for connections. (feature not supported)&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,424 [main] INFO   HikariDataSource: HikariPool-11 - Start completed.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,425 [main] INFO   Dialect: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:19,493 [main] WARN   JavaTypeDescriptorRegistry: HHH000481: Encountered Java type [class java.lang.Object] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,601 [main] INFO   LogHelper: HHH000204: Processing PersistenceUnitInfo [name: mir-module]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,631 [main] INFO   HikariDataSource: HikariPool-12 - Starting...&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:19,633 [main] WARN   DriverDataSource: Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,635 [main] INFO   PoolBase: HikariPool-12 - Driver does not support get/set network timeout for connections. (feature not supported)&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,640 [main] INFO   HikariDataSource: HikariPool-12 - Start completed.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,642 [main] INFO   Dialect: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:19,698 [main] WARN   JavaTypeDescriptorRegistry: HHH000481: Encountered Java type [class java.lang.Object] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.&amp#27;[m&amp#27;[0m
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="testMARC1toW3CDTF" classname="org.mycore.mir.date.MIRDateConverterTest" time="0.818">
+    <system-out><![CDATA[MyCoRe components detected: mcr:mycore-base, mcr:mycore-solr, mcr:mycore-user2, mcr:mycore-xeditor, mcr:mycore-classbrowser, mcr:mycore-mods, mcr:mycore-csl, mcr:mycore-ifs, mcr:mycore-pi, mcr:mycore-sword, mcr:mycore-wfc
+Applications modules detected: app:mir-module
+&amp#27;[34m2021-06-10T18:24:19,728 [main] INFO   MCRConfigurationInputStream: Current configuration directory: /tmp/junit11057615408979682655/mcrhome/mir-module&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,843 [main] INFO   LogHelper: HHH000204: Processing PersistenceUnitInfo [name: mir-module]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,884 [main] INFO   HikariDataSource: HikariPool-13 - Starting...&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:19,885 [main] WARN   DriverDataSource: Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,886 [main] INFO   PoolBase: HikariPool-13 - Driver does not support get/set network timeout for connections. (feature not supported)&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,892 [main] INFO   HikariDataSource: HikariPool-13 - Start completed.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:19,893 [main] INFO   Dialect: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:19,935 [main] WARN   JavaTypeDescriptorRegistry: HHH000481: Encountered Java type [class java.lang.Object] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:20,162 [main] WARN   MetadataContext: HHH015011: Unable to locate static metamodel field : org.mycore.datamodel.classifications2.MCRCategoryID_#id; this may or may not indicate a problem with the static metamodel&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,169 [main] INFO   JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,301 [main] INFO   LogHelper: HHH000204: Processing PersistenceUnitInfo [name: mir-module]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,330 [main] INFO   HikariDataSource: HikariPool-14 - Starting...&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:20,331 [main] WARN   DriverDataSource: Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,333 [main] INFO   PoolBase: HikariPool-14 - Driver does not support get/set network timeout for connections. (feature not supported)&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,333 [main] INFO   HikariDataSource: HikariPool-14 - Start completed.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,334 [main] INFO   Dialect: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:20,375 [main] WARN   JavaTypeDescriptorRegistry: HHH000481: Encountered Java type [class java.lang.Object] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,440 [main] INFO   LogHelper: HHH000204: Processing PersistenceUnitInfo [name: mir-module]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,470 [main] INFO   HikariDataSource: HikariPool-15 - Starting...&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:20,471 [main] WARN   DriverDataSource: Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,472 [main] INFO   PoolBase: HikariPool-15 - Driver does not support get/set network timeout for connections. (feature not supported)&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,472 [main] INFO   HikariDataSource: HikariPool-15 - Start completed.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,473 [main] INFO   Dialect: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:20,516 [main] WARN   JavaTypeDescriptorRegistry: HHH000481: Encountered Java type [class java.lang.Object] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.&amp#27;[m&amp#27;[0m
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="testUnConvertible" classname="org.mycore.mir.date.MIRDateConverterTest" time="1.027">
+    <system-out><![CDATA[MyCoRe components detected: mcr:mycore-base, mcr:mycore-solr, mcr:mycore-user2, mcr:mycore-xeditor, mcr:mycore-classbrowser, mcr:mycore-mods, mcr:mycore-csl, mcr:mycore-ifs, mcr:mycore-pi, mcr:mycore-sword, mcr:mycore-wfc
+Applications modules detected: app:mir-module
+&amp#27;[34m2021-06-10T18:24:20,597 [main] INFO   MCRConfigurationInputStream: Current configuration directory: /tmp/junit11057615408979682655/mcrhome/mir-module&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,684 [main] INFO   LogHelper: HHH000204: Processing PersistenceUnitInfo [name: mir-module]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,810 [main] INFO   HikariDataSource: HikariPool-16 - Starting...&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:20,810 [main] WARN   DriverDataSource: Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,813 [main] INFO   PoolBase: HikariPool-16 - Driver does not support get/set network timeout for connections. (feature not supported)&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,814 [main] INFO   HikariDataSource: HikariPool-16 - Start completed.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:20,816 [main] INFO   Dialect: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:20,879 [main] WARN   JavaTypeDescriptorRegistry: HHH000481: Encountered Java type [class java.lang.Object] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:21,123 [main] WARN   MetadataContext: HHH015011: Unable to locate static metamodel field : org.mycore.datamodel.classifications2.MCRCategoryID_#id; this may or may not indicate a problem with the static metamodel&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:21,129 [main] INFO   JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:21,253 [main] INFO   LogHelper: HHH000204: Processing PersistenceUnitInfo [name: mir-module]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:21,286 [main] INFO   HikariDataSource: HikariPool-17 - Starting...&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:21,286 [main] WARN   DriverDataSource: Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:21,287 [main] INFO   PoolBase: HikariPool-17 - Driver does not support get/set network timeout for connections. (feature not supported)&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:21,288 [main] INFO   HikariDataSource: HikariPool-17 - Start completed.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:21,288 [main] INFO   Dialect: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:21,339 [main] WARN   JavaTypeDescriptorRegistry: HHH000481: Encountered Java type [class java.lang.Object] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:21,418 [main] WARN   MIRDateConverter: Error while converting 20uu from format marc java.time.format.DateTimeParseException: Text '20uu' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2046)
+	at java.base/java.time.format.DateTimeFormatter.parseBest(DateTimeFormatter.java:1994)
+	at org.mycore.mir.date.MIRDateConverter.getFormatedDateString(MIRDateConverter.java:28)
+	at org.mycore.mir.date.MIRDateConverter.convertDate(MIRDateConverter.java:20)
+	at org.mycore.mir.date.MIRDateConverterTest.testUnConvertible(MIRDateConverterTest.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:21,429 [main] WARN   MIRDateConverter: Error while converting 2017-W01-1 from format iso8601 java.time.format.DateTimeParseException: Text '2017-W01-1' could not be parsed at index 5
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2046)
+	at java.base/java.time.format.DateTimeFormatter.parseBest(DateTimeFormatter.java:1994)
+	at org.mycore.mir.date.MIRDateConverter.getFormatedDateString(MIRDateConverter.java:28)
+	at org.mycore.mir.date.MIRDateConverter.convertDate(MIRDateConverter.java:20)
+	at org.mycore.mir.date.MIRDateConverterTest.testUnConvertible(MIRDateConverterTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:21,431 [main] WARN   MIRDateConverter: Error while converting unknown/2009 from format edtf java.lang.ClassNotFoundException: org.mycore.mir.date.MIREDTFFormatter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at org.mycore.mir.date.MIRDateConverter.convertDate(MIRDateConverter.java:18)
+	at org.mycore.mir.date.MIRDateConverterTest.testUnConvertible(MIRDateConverterTest.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:21,432 [main] WARN   MIRDateConverter: Error while converting 1860~-1872 from format temper java.lang.ClassNotFoundException: org.mycore.mir.date.MIRTEMPERFormatter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at org.mycore.mir.date.MIRDateConverter.convertDate(MIRDateConverter.java:18)
+	at org.mycore.mir.date.MIRDateConverterTest.testUnConvertible(MIRDateConverterTest.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:21,446 [main] INFO   LogHelper: HHH000204: Processing PersistenceUnitInfo [name: mir-module]&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:21,474 [main] INFO   HikariDataSource: HikariPool-18 - Starting...&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:21,475 [main] WARN   DriverDataSource: Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:21,477 [main] INFO   PoolBase: HikariPool-18 - Driver does not support get/set network timeout for connections. (feature not supported)&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:21,480 [main] INFO   HikariDataSource: HikariPool-18 - Start completed.&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[34m2021-06-10T18:24:21,481 [main] INFO   Dialect: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect&amp#27;[m&amp#27;[0m
+&amp#27;[m&amp#27;[31m2021-06-10T18:24:21,541 [main] WARN   JavaTypeDescriptorRegistry: HHH000481: Encountered Java type [class java.lang.Object] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.&amp#27;[m&amp#27;[0m
+&amp#27;[m]]></system-out>
+  </testcase>
+</testsuite>

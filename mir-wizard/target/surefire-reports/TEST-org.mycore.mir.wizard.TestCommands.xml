@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.mycore.mir.wizard.TestCommands" time="24.433" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="git.tags" value=""/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="git.build.version" value="2021.05-SNAPSHOT"/>
+    <property name="java.class.path" value="/home/travis/build/MyCoRe-Org/mir/mir-wizard/target/test-classes:/home/travis/build/MyCoRe-Org/mir/mir-wizard/target/classes:/home/travis/.m2/repository/com/h2database/h2/1.4.199/h2-1.4.199.jar:/home/travis/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/travis/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/home/travis/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.4/jakarta.servlet-api-4.0.4.jar:/home/travis/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/travis/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/travis/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar:/home/travis/.m2/repository/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar:/home/travis/.m2/repository/org/mycore/mycore-base/2021.05-SNAPSHOT/mycore-base-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/com/auth0/java-jwt/3.16.0/java-jwt-3.16.0.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.12.3/jackson-module-jaxb-annotations-2.12.3.jar:/home/travis/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/travis/.m2/repository/com/google/code/gson/gson/2.8.7/gson-2.8.7.jar:/home/travis/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/home/travis/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/travis/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/travis/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/travis/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/home/travis/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/home/travis/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/travis/.m2/repository/com/google/zxing/core/3.4.1/core-3.4.1.jar:/home/travis/.m2/repository/com/ibm/icu/icu4j/69.1/icu4j-69.1.jar:/home/travis/.m2/repository/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar:/home/travis/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/travis/.m2/repository/com/sun/mail/mailapi/1.6.5/mailapi-1.6.5.jar:/home/travis/.m2/repository/com/sun/mail/smtp/1.6.5/smtp-1.6.5.jar:/home/travis/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/travis/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/travis/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/travis/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/travis/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.9/swagger-annotations-2.1.9.jar:/home/travis/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/travis/.m2/repository/jakarta/inject/jakarta.inject-api/1.0.1/jakarta.inject-api-1.0.1.jar:/home/travis/.m2/repository/jakarta/websocket/jakarta.websocket-api/1.1.2/jakarta.websocket-api-1.1.2.jar:/home/travis/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/home/travis/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/travis/.m2/repository/jaxen/jaxen/1.2.0/jaxen-1.2.0.jar:/home/travis/.m2/repository/net/java/dev/jna/jna/5.6.0/jna-5.6.0.jar:/home/travis/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/travis/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpclient-cache/4.5.13/httpclient-cache-4.5.13.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-web/2.14.1/log4j-web-2.14.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar:/home/travis/.m2/repository/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar:/home/travis/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar:/home/travis/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.34/jersey-container-servlet-core-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-common/2.34/jersey-common-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-client/2.34/jersey-client-2.34.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-server/2.34/jersey-server-2.34.jar:/home/travis/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/travis/.m2/repository/org/glassfish/jersey/media/jersey-media-multipart/2.34/jersey-media-multipart-2.34.jar:/home/travis/.m2/repository/org/jvnet/mimepull/mimepull/1.9.13/mimepull-1.9.13.jar:/home/travis/.m2/repository/org/hibernate/hibernate-core/5.4.28.Final/hibernate-core-5.4.28.Final.jar:/home/travis/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/home/travis/.m2/repository/net/bytebuddy/byte-buddy/1.10.17/byte-buddy-1.10.17.jar:/home/travis/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/travis/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/travis/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/travis/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/travis/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/home/travis/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/travis/.m2/repository/org/javassist/javassist/3.28.0-GA/javassist-3.28.0-GA.jar:/home/travis/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar:/home/travis/.m2/repository/org/tmatesoft/svnkit/svnkit/1.10.3/svnkit-1.10.3.jar:/home/travis/.m2/repository/de/regnis/q/sequence/sequence-library/1.0.4/sequence-library-1.0.4.jar:/home/travis/.m2/repository/org/tmatesoft/sqljet/sqljet/1.1.14/sqljet-1.1.14.jar:/home/travis/.m2/repository/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.jar:/home/travis/.m2/repository/net/java/dev/jna/jna-platform/5.6.0/jna-platform-5.6.0.jar:/home/travis/.m2/repository/org/lz4/lz4-java/1.4.1/lz4-java-1.4.1.jar:/home/travis/.m2/repository/se/jiderhamn/classloader-leak-prevention/classloader-leak-prevention-core/2.7.0/classloader-leak-prevention-core-2.7.0.jar:/home/travis/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/home/travis/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.14.1/log4j-slf4j-impl-2.14.1.jar:/home/travis/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/travis/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.34/jersey-hk2-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/home/travis/.m2/repository/org/mycore/mycore-base/2021.05-SNAPSHOT/mycore-base-2021.05-SNAPSHOT-tests.jar:/home/travis/.m2/repository/org/mycore/mycore-solr/2021.05-SNAPSHOT/mycore-solr-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/apache/solr/solr-solrj/8.8.2/solr-solrj-8.8.2.jar:/home/travis/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/travis/.m2/repository/org/apache/zookeeper/zookeeper/3.6.2/zookeeper-3.6.2.jar:/home/travis/.m2/repository/org/apache/zookeeper/zookeeper-jute/3.6.2/zookeeper-jute-3.6.2.jar:/home/travis/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.6/snappy-java-1.1.7.6.jar:/home/travis/.m2/repository/org/mycore/mycore-classbrowser/2021.05-SNAPSHOT/mycore-classbrowser-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/travis/.m2/repository/org/mycore/mycore-user2/2021.05-SNAPSHOT/mycore-user2-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/jasig/cas/cas-client-core/3.1.10/cas-client-core-3.1.10.jar:"/>
+    <property name="git.branch" value="main"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="git.build.number" value="3501"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="git.build.number.unique" value="774175413"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="git.build.user.name" value="Travis CI User"/>
+    <property name="sun.boot.library.path" value="/usr/local/lib/jvm/openjdk11/lib"/>
+    <property name="sun.java.command" value="/home/travis/build/MyCoRe-Org/mir/mir-wizard/target/surefire/surefirebooter17600602706555748792.jar /home/travis/build/MyCoRe-Org/mir/mir-wizard/target/surefire 2021-06-10T18-24-03_710-jvmRun1 surefire12254036706054909911tmp surefire_111311595840831920160tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/travis/build/MyCoRe-Org/mir/mir-wizard/target/test-classes:/home/travis/build/MyCoRe-Org/mir/mir-wizard/target/classes:/home/travis/.m2/repository/com/h2database/h2/1.4.199/h2-1.4.199.jar:/home/travis/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/travis/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/home/travis/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.4/jakarta.servlet-api-4.0.4.jar:/home/travis/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/travis/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/travis/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar:/home/travis/.m2/repository/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar:/home/travis/.m2/repository/org/mycore/mycore-base/2021.05-SNAPSHOT/mycore-base-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/com/auth0/java-jwt/3.16.0/java-jwt-3.16.0.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/home/travis/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.12.3/jackson-module-jaxb-annotations-2.12.3.jar:/home/travis/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/travis/.m2/repository/com/google/code/gson/gson/2.8.7/gson-2.8.7.jar:/home/travis/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/home/travis/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/travis/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/travis/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/travis/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/home/travis/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/home/travis/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/travis/.m2/repository/com/google/zxing/core/3.4.1/core-3.4.1.jar:/home/travis/.m2/repository/com/ibm/icu/icu4j/69.1/icu4j-69.1.jar:/home/travis/.m2/repository/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar:/home/travis/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/travis/.m2/repository/com/sun/mail/mailapi/1.6.5/mailapi-1.6.5.jar:/home/travis/.m2/repository/com/sun/mail/smtp/1.6.5/smtp-1.6.5.jar:/home/travis/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/travis/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/travis/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/travis/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/travis/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.9/swagger-annotations-2.1.9.jar:/home/travis/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/travis/.m2/repository/jakarta/inject/jakarta.inject-api/1.0.1/jakarta.inject-api-1.0.1.jar:/home/travis/.m2/repository/jakarta/websocket/jakarta.websocket-api/1.1.2/jakarta.websocket-api-1.1.2.jar:/home/travis/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/home/travis/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/travis/.m2/repository/jaxen/jaxen/1.2.0/jaxen-1.2.0.jar:/home/travis/.m2/repository/net/java/dev/jna/jna/5.6.0/jna-5.6.0.jar:/home/travis/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/travis/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpclient-cache/4.5.13/httpclient-cache-4.5.13.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-web/2.14.1/log4j-web-2.14.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar:/home/travis/.m2/repository/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar:/home/travis/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar:/home/travis/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.34/jersey-container-servlet-core-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-common/2.34/jersey-common-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-client/2.34/jersey-client-2.34.jar:/home/travis/.m2/repository/org/glassfish/jersey/core/jersey-server/2.34/jersey-server-2.34.jar:/home/travis/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/travis/.m2/repository/org/glassfish/jersey/media/jersey-media-multipart/2.34/jersey-media-multipart-2.34.jar:/home/travis/.m2/repository/org/jvnet/mimepull/mimepull/1.9.13/mimepull-1.9.13.jar:/home/travis/.m2/repository/org/hibernate/hibernate-core/5.4.28.Final/hibernate-core-5.4.28.Final.jar:/home/travis/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/home/travis/.m2/repository/net/bytebuddy/byte-buddy/1.10.17/byte-buddy-1.10.17.jar:/home/travis/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/travis/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/travis/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/travis/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/travis/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/home/travis/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/travis/.m2/repository/org/javassist/javassist/3.28.0-GA/javassist-3.28.0-GA.jar:/home/travis/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar:/home/travis/.m2/repository/org/tmatesoft/svnkit/svnkit/1.10.3/svnkit-1.10.3.jar:/home/travis/.m2/repository/de/regnis/q/sequence/sequence-library/1.0.4/sequence-library-1.0.4.jar:/home/travis/.m2/repository/org/tmatesoft/sqljet/sqljet/1.1.14/sqljet-1.1.14.jar:/home/travis/.m2/repository/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.jar:/home/travis/.m2/repository/net/java/dev/jna/jna-platform/5.6.0/jna-platform-5.6.0.jar:/home/travis/.m2/repository/org/lz4/lz4-java/1.4.1/lz4-java-1.4.1.jar:/home/travis/.m2/repository/se/jiderhamn/classloader-leak-prevention/classloader-leak-prevention-core/2.7.0/classloader-leak-prevention-core-2.7.0.jar:/home/travis/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/home/travis/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/home/travis/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.14.1/log4j-slf4j-impl-2.14.1.jar:/home/travis/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/travis/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.34/jersey-hk2-2.34.jar:/home/travis/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/home/travis/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/home/travis/.m2/repository/org/mycore/mycore-base/2021.05-SNAPSHOT/mycore-base-2021.05-SNAPSHOT-tests.jar:/home/travis/.m2/repository/org/mycore/mycore-solr/2021.05-SNAPSHOT/mycore-solr-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/apache/solr/solr-solrj/8.8.2/solr-solrj-8.8.2.jar:/home/travis/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/travis/.m2/repository/org/apache/zookeeper/zookeeper/3.6.2/zookeeper-3.6.2.jar:/home/travis/.m2/repository/org/apache/zookeeper/zookeeper-jute/3.6.2/zookeeper-jute-3.6.2.jar:/home/travis/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.6/snappy-java-1.1.7.6.jar:/home/travis/.m2/repository/org/mycore/mycore-classbrowser/2021.05-SNAPSHOT/mycore-classbrowser-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/travis/.m2/repository/org/mycore/mycore-user2/2021.05-SNAPSHOT/mycore-user2-2021.05-SNAPSHOT.jar:/home/travis/.m2/repository/org/jasig/cas/cas-client-core/3.1.10/cas-client-core-3.1.10.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/travis"/>
+    <property name="user.language" value="en"/>
+    <property name="git.closest.tag.commit.count" value="2276"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.home" value="/usr/local/lib/jvm/openjdk11"/>
+    <property name="git.total.commit.count" value="2337"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/travis/build/MyCoRe-Org/mir/mir-wizard"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="git.commit.id.full" value="b5dc6138114ef0befe66ee9e08d5219171474722"/>
+    <property name="git.closest.tag.name" value="v2020.06.1"/>
+    <property name="git.local.branch.ahead" value="NO_REMOTE"/>
+    <property name="git.build.time" value="2021-06-10T18:23:21Z"/>
+    <property name="surefire.real.class.path" value="/home/travis/build/MyCoRe-Org/mir/mir-wizard/target/surefire/surefirebooter17600602706555748792.jar"/>
+    <property name="git.commit.message.full" value="Merge 317054bd0d8e99e43509851db66ca79d1b403fcf into ed5929908a03f18bb02dc0421db335dcd3011fda"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.2+9"/>
+    <property name="user.name" value="travis"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-1032-gcp"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="jetty" value="true"/>
+    <property name="git.local.branch.behind" value="NO_REMOTE"/>
+    <property name="git.dirty" value="false"/>
+    <property name="localRepository" value="/home/travis/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="user.dir" value="/home/travis/build/MyCoRe-Org/mir/mir-wizard"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="git.commit.user.name" value="Kathleen Neumann"/>
+    <property name="git.commit.id.abbrev" value="b5dc613"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="git.commit.id.describe-short" value="v2020.06.1-2276"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="git.commit.id.describe" value="v2020.06.1-2276-gb5dc613"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="git.commit.message.short" value="Merge 317054bd0d8e99e43509851db66ca79d1b403fcf into ed5929908a03f18bb02dc0421db335dcd3011fda"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.2+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="git.commit.time" value="2021-06-10T18:19:09Z"/>
+    <property name="git.remote.origin.url" value="https://github.com/MyCoRe-Org/mir.git"/>
+  </properties>
+  <testcase name="testLoadClassifications" classname="org.mycore.mir.wizard.TestCommands" time="22.009">
+    <system-out><![CDATA[Setting MCR.Home=/tmp/junit10718984088653439656/mcrhome
+Setting MCR.AppName=mir-wizard
+Creating config directory: /tmp/junit10718984088653439656/mcrhome/mir-wizard
+MyCoRe components detected: mcr:mycore-base, mcr:mycore-solr, mcr:mycore-user2, mcr:mycore-classbrowser
+Applications modules detected: app:mir-wizard
+MCRConfigurationInputStream.getMyCoRePropertiesInstance Current configuration directory: /tmp/junit10718984088653439656/mcrhome/mir-wizard 
+MIRWizardCommandChain.execute Execute MIRWizardLoadClassifications... 
+MCRShutdownThread.<init> adding MyCoRe ShutdownHook 
+MCREntityResolver.lambda$new$0 Using XML catalog: jar:file:/home/travis/.m2/repository/org/mycore/mycore-base/2021.05-SNAPSHOT/mycore-base-2021.05-SNAPSHOT.jar!/catalog.xml 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category XMetaDissPlusThesisLevel saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category derivate_types saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category diniPublType saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category marcrelator saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category marcgt saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category mcr-roles saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category mir_access saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category mir_filetype saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category mir_genres saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category mir_institutes saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category mir_licenses saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category rfc5646 saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category SDNB saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category state saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category typeOfResource saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category nameIdentifier saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category noteTypes saved. 
+MCRCategoryDAOImpl.lambda$addCategory$0 Category identifier saved. 
+<result>Lade Klassification "de(Art des akademischen Grades)"...fertig.
+Lade Klassification "de(Dateibereichtyp)"...fertig.
+Lade Klassification "de(DINI Publikations- und Dokumenttypen)"...fertig.
+Lade Klassification "de(MARC-Relator-Rollen)"...fertig.
+Lade Klassification "de(MARC Genre Liste)"...fertig.
+Lade Klassification "de(Systemnutzerrollen)"...fertig.
+Lade Klassification "de(Zugriffsberechtigungen auf Volltexte)"...fertig.
+Lade Klassification "de(Dateitypen für Forschungsdaten)"...fertig.
+Lade Klassification "de(Genre)"...fertig.
+Lade Klassification "de(Beispiel-Einrichtungen)"...fertig.
+Lade Klassification "de(Lizenzen)"...fertig.
+Lade Klassification "de(Sprache)"...fertig.
+Lade Klassification "de(Sachgruppen der Deutschen Nationalbibliographie)"...fertig.
+Lade Klassification "de(Objektstatus)"...fertig.
+Lade Klassification "de(typeOfResource)"...fertig.
+Lade Klassification "de(Namens Identifikator)"...fertig.
+Lade Klassification "de(Kommentartyp)"...fertig.
+Lade Klassification "de(Identifikatoren)"...fertig.</result>]]></system-out>
+  </testcase>
+  <testcase name="testImportACLs" classname="org.mycore.mir.wizard.TestCommands" time="2.199">
+    <system-out><![CDATA[MyCoRe components detected: mcr:mycore-base, mcr:mycore-solr, mcr:mycore-user2, mcr:mycore-classbrowser
+Applications modules detected: app:mir-wizard
+MCRConfigurationInputStream.getMyCoRePropertiesInstance Current configuration directory: /tmp/junit10718984088653439656/mcrhome/mir-wizard 
+MIRWizardCommandChain.execute Execute MIRWizardMCRCommand... 
+MCRCommand.invoke Syntax matched (executed): load permissions data from file {0} 
+MCRAccessCommands.createPermissionsFromFile Reading file /tmp/resfile6488043478900293255.xml ... 
+null Command processed (315 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (21 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (8 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (10 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (12 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (16 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (11 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (16 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (15 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (7 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (11 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (7 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (6 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (6 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (8 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (7 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (7 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (10 ms)
+MIRWizardCommandChain.execute Execute MIRWizardMCRCommand... 
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (10 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (9 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (11 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (13 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (14 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (10 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (7 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (16 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (6 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (13 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (13 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (10 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (11 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (11 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (14 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (12 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (8 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (17 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (10 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (10 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (5 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (10 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (11 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (14 ms)
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (10 ms)
+MIRWizardCommandChain.execute Execute MIRWizardMCRCommand... 
+MCRCommand.invoke Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3} 
+null Command processed (8 ms)
+<import.acls success="true">
+  <result>2021-06-10T18:26:11,486 INFO - Syntax matched (executed): load permissions data from file {0}
+2021-06-10T18:26:11,486 INFO - Reading file /tmp/resfile6488043478900293255.xml ...
+2021-06-10T18:26:11,826 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:11,864 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:11,884 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:11,905 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:11,929 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:11,953 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:11,973 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:11,997 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:12,019 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:12,032 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:12,047 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:12,059 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:12,069 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:12,080 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:12,092 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:12,103 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}
+2021-06-10T18:26:12,115 INFO - Syntax matched (executed): update permission {0} for id {1} with rulefile {2} described by {3}</result>
+</import.acls>]]></system-out>
+  </testcase>
+</testsuite>
