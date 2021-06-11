@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.mycore.mir.it.tests.MIRWebCLIITCase
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.254 sec - in org.mycore.mir.it.tests.MIRWebCLIITCase
